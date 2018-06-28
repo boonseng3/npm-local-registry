@@ -1,0 +1,4 @@
+FROM verdaccio/verdaccio
+COPY config.yaml /verdaccio/conf
+USER root
+RUN chmod 755 /verdaccio/conf/config.yaml
